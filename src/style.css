@@ -1,3 +1,76 @@
 body {
-  background-color: antiquewhite;
+  background-color: #ecf7e5;
+}
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #3f3d56;
+}
+
+footer {
+  font-family: "Josefin sans";
+  font-size: 13px;
+}
+form {
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+a {
+  color: #78a95a;
+}
+
+img {
+  width: 65px;
+}
+.welcome {
+  padding-left: 80px;
+}
+.container {
+  margin: 90px auto;
+  max-width: 800px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.ai-generator-title {
+  font-size: 63px;
+  max-width: 100%;
+}
+
+.instructions {
+  padding: 10px;
+  border: 1px solid #aeb0b2;
+  border-radius: 2px;
+  font-family: "josefin sans";
+  width: 80%;
+  font-size: 15px;
+}
+
+.submit-button {
+  margin-left: 10px;
+  color: #40454f;
+  font-family: "josefin sans";
+  border: none;
+  background-color: #94d070;
+  padding: 0 30px;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.recipe {
+  color: #3f3d56;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: white;
+  padding: 0 20px 20px;
+  border-left: #94d070 2px solid;
+  font-family: "Josefin sans";
+  line-height: 1.1;
+  border-radius: 2px;
 }
