@@ -1,14 +1,23 @@
-function displayRecipe(event) {
+function getRecipe(event) {
   event.preventDefault();
+  let apiKey = "fc033e4428deacf92tb6o5f960d83508";
+  let instructions = document.querySelector("#user-instructions");
+  let prompt = `Provide me with any recipe that contain the following: ${instructions.value}`;
+  let context =
+    "devide text in two parts/paragraphs: ingredients and instructions,  add an emoticon of the dish, include <br/> <br/> before instructions";
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  axios.get(apiUrl).then(displayRecipe);
+}
+
+function displayRecipe(response) {
   new Typewriter("#recipe", {
-    strings:
-      "Combine sugar and water in a medium saucepan over medium heat; bring to a boil, stirring, until sugar has dissolved. Allow to cool.",
+    strings: response.data.answer,
     cursor: "",
-    delay: 20,
+    delay: 10,
     autoStart: true,
   });
 }
 
 let recipesFormElement = document.querySelector("#recipes-generator-form");
-recipesFormElement.addEventListener("submit", displayRecipe);
+recipesFormElement.addEventListener("submit", getRecipe);
