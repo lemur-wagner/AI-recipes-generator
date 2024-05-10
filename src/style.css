@@ -1,5 +1,9 @@
 body {
   background-color: #ecf7e5;
+  background-image: url("../img/food-illustration-sandwich-by-Vexels.svg");
+  background-repeat: none;
+  background-size: cover;
+  height: 100%;
 }
 
 h1 {
@@ -11,8 +15,15 @@ h1 {
 }
 
 footer {
+  opacity: 0.9;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: white;
   font-family: "Josefin sans";
-  font-size: 13px;
+  font-size: 11px;
+  border-radius: 4%;
+  max-width: 100%;
+  border-radius: 4px;
 }
 form {
   display: flex;
@@ -21,17 +32,15 @@ a {
   color: #78a95a;
 }
 
-img {
-  width: 60px;
-}
 .welcome {
   padding-left: 80px;
 }
 .container {
   margin: 90px auto;
   max-width: 800px;
-  padding: 20px;
+  padding: 40px;
   margin-top: 10px;
+  min-height: 100%;
 }
 
 .hint {
@@ -50,10 +59,12 @@ img {
 }
 
 .ai-generator-title {
-  font-size: 60px;
+  font-size: 55px;
   max-width: 100%;
 }
-
+.generator {
+  text-align: center;
+}
 .instructions {
   padding: 10px;
   border: 1px solid #aeb0b2;
