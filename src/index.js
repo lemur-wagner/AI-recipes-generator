@@ -7,6 +7,10 @@ function getRecipe(event) {
     "devide text in two parts/paragraphs: ingredients and instructions,  add an emoticon of the dish, include <br/> <br/> before instructions";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipe = document.querySelector("#recipe");
+  recipe.classList.remove("hidden");
+  recipe.innerHTML = `<span class=generating>⏳</span> Generating a recipe that include ${instructions.value}..`;
+
   axios.get(apiUrl).then(displayRecipe);
 }
 

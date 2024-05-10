@@ -32,21 +32,24 @@
         </h1>
       </header>
       <main>
-        <form id="recipes-generator-form">
-          <input
-            type="text"
-            placeholder="Type the ingredients..."
-            autofocus
-            required
-            autocomplete="0ff"
-            class="instructions"
-            id="user-instructions"
-          />
+        <div class="form-container">
+          <form id="recipes-generator-form">
+            <input
+              type="text"
+              placeholder="Type the ingredients..."
+              autofocus
+              required
+              autocomplete="0ff"
+              class="instructions"
+              id="user-instructions"
+            />
 
-          <input type="submit" class="submit-button" />
-        </form>
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Tofu, Fish or Chocolate</div>
+        </div>
 
-        <div class="recipe" id="recipe"></div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <br />
       <footer>
